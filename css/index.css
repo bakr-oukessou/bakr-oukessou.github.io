@@ -61,7 +61,7 @@ body {
     @media only screen and (min-width: 79.5em) {
       .body-wrapper::before {
         left: 54.9rem;
-        bottom: 131rem;
+        bottom: 171rem;
      } 
     }
   
