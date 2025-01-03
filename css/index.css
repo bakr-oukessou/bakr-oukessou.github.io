@@ -88,7 +88,16 @@ header {
     flex-direction: row;
     /* background: linear-gradient(to right,rgb(14, 103, 45),rgb(41, 216, 114)); */
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(10px);
+}
 
 .visually-hidden {
     position: absolute;

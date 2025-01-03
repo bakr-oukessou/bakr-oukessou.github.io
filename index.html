@@ -115,7 +115,7 @@
     </header>
 
     <main class="main">
-        <section class="section-experience center-text">
+        <section class="section-experience center-text fade-in">
         <h2 class="visually-hidden">Experience Section</h2>
         <div class="experience__text-box">
           <h3 class="heading-secondary">HTML</h3>
@@ -322,5 +322,20 @@
       </footer>
          
     </div>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+              }
+          });
+      }, {
+          threshold: 0.1
+      });
+
+      document.querySelectorAll('.fade-in').forEach(element => {
+          observer.observe(element);
+      });
+  </script>
 </body>
 </html>
