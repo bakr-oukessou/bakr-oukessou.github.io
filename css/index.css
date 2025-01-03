@@ -1,32 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO+Guides&display=swap');
 
-* {
+.press-start-2p-regular {
+    font-family: "Shadows Into Light", serif;
+    /* font-weight: 900; */
+    /* font-size: 100px; */
+    font-style: normal;
+  }
+  
+*,
+*::before,
+*::after {
+    font-family: "Poppins";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
+    min-height: 100vh; 
     text-align: center;
     font-family: "Poppins";
     line-height: 1.6;
     color: #333;
     background: linear-gradient(rgb(1, 29, 96),rgb(1, 22, 42));
     
+}  
+  
+.body-wrapper {
+    background-color: hsl(0,0%,8%);
+    background-image: url(../images/pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 27vw 35.5vw;
+    /* display: grid; */
+    grid-template-columns: [full-start] minmax(1.6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.25rem) [col-end]) [center-end] minmax(1.6rem, 1fr) [full-end];
+    position: relative;
+    overflow-x: hidden; 
 }
-
+.body-wrapper::before {
+    position: absolute;
+    content: url(../images/pattern-rings.svg);
+    bottom: 0;
+    /* left: 50vw; */
+    transform: translateY(50%); 
+  }
+    @media only screen and (min-width: 42em) {
+      .body-wrapper::before {
+        left: 68vw;
+        bottom: 49vw;
+        } 
+      }
+    @media only screen and (min-width: 63.5em) {
+      .body-wrapper::before {
+        left: -11vw;
+        bottom: 171vw;
+       } 
+      }
+    @media only screen and (min-width: 79.5em) {
+      .body-wrapper::before {
+        left: 54.9rem;
+        bottom: 131rem;
+     } 
+    }
+  
 header {
-    background: linear-gradient(rgb(1, 29, 96),rgb(1, 22, 42));
+    /* background: linear-gradient(rgb(1, 29, 96),rgb(1, 22, 42)); */
     color: white;
     text-align: center;
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
     background-size: cover;
     background-position: center;
     display: flex;  
 }
 
 .container {
-    max-width: 1100px;
+    /* max-width: 1100px; */
     /* margin: 0 auto; */
     padding: 0 20px;
     display: flex;
@@ -39,6 +89,14 @@ header {
     /* background: linear-gradient(to right,rgb(14, 103, 45),rgb(41, 216, 114)); */
 }
 
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+  
 nav {
     background: rgb(4, 14, 40);
     color: white;
@@ -69,10 +127,227 @@ section {
     display: flex;
     flex-direction: column;
 }
+/* //////////////////////header//////////////////// */
+
+.section-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    position: relative; }
+    .section-hero::before {
+      content: url(../assets/images/pattern-rings.svg);
+      position: absolute;
+      top: 12.4rem;
+      right: 50vw;
+      z-index: 0; }
+      @media only screen and (min-width: 50.5em) {
+        .section-hero::before {
+          top: 7.5rem;
+          right: 64vw; } }
+      @media only screen and (min-width: 63.5em) {
+        .section-hero::before {
+          top: 7rem;
+          right: 72vw; } }
+      @media only screen and (min-width: 79.5em) {
+        .section-hero::before {
+          top: 10.5rem;
+          left: -29rem; } }
+      @media only screen and (min-width: 89.5em) {
+        .section-hero::before {
+          top: 12.9rem;
+          left: -26rem; } }
+    @media only screen and (min-width: 42em) {
+      .section-hero {
+        grid-template-columns: 8.47fr 5fr;
+        gap: 0;
+        padding-top: 14.1rem;
+        text-align: left; } }
+    @media only screen and (min-width: 50.5em) {
+      .section-hero {
+        grid-template-columns: 8fr 5fr; } }
+    @media only screen and (min-width: 57em) {
+      .section-hero {
+        grid-template-columns: 9fr 4fr; } }
+    @media only screen and (min-width: 63.5em) {
+      .section-hero {
+        grid-template-columns: 7fr 4fr;
+        padding-bottom: 11.4rem; } }
+    @media only screen and (min-width: 79.5em) {
+      .section-hero {
+        padding-top: 17.6rem;
+        padding-bottom: 10.222rem; } }
+    @media only screen and (min-width: 89.5em) {
+      .section-hero {
+        padding-top: 19.8rem;
+        padding-bottom: 11.5rem; } }
+  
+  .hero__pic {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (min-width: 42em) {
+      .hero__pic::before {
+        content: url(../assets/images/pattern-circle.svg);
+        position: absolute;
+        bottom: 0;
+        left: 88vw;
+        z-index: 1;
+        height: 12.9rem; } }
+    @media only screen and (min-width: 63.5em) {
+      .hero__pic::before {
+        bottom: 7rem;
+        left: 50vw; } }
+    @media only screen and (min-width: 79.5em) {
+      .hero__pic::before {
+        bottom: 6.22rem;
+        left: 64rem; } }
+    @media only screen and (min-width: 89.5em) {
+      .hero__pic::before {
+        bottom: 7rem;
+        left: 59.7rem; } }
+  
+  .hero__img {
+    width: 63.73%;
+    z-index: 1;
+    position: relative; }
+    @media only screen and (min-width: 23em) {
+      .hero__img {
+        width: 50.73%; } }
+    @media only screen and (min-width: 42em) {
+      .hero__img {
+        width: 45.45%;
+        position: absolute;
+        top: 0;
+        right: -3.1rem;
+        z-index: 0; } }
+    @media only screen and (min-width: 48.5em) {
+      .hero__img {
+        width: 45%;
+        right: -3rem; } }
+    @media only screen and (min-width: 50.5em) {
+      .hero__img {
+        width: 43%; } }
+    @media only screen and (min-width: 51em) {
+      .hero__img {
+        width: 42.4%; } }
+    @media only screen and (min-width: 52em) {
+      .hero__img {
+        width: 41.7%; } }
+    @media only screen and (min-width: 57em) {
+      .hero__img {
+        width: 37.9%; } }
+    @media only screen and (min-width: 63.5em) {
+      .hero__img {
+        right: 0;
+        width: 40.091%; } }
+    @media only screen and (min-width: 79.5em) {
+      .hero__img {
+        width: 36.4%; } }
+    @media only screen and (min-width: 89.5em) {
+      .hero__img {
+        width: auto;
+        max-width: 40.09%; } }
+  
+  @media only screen and (min-width: 42em) {
+    .hero__text-box {
+      grid-column: 1 / 2;
+      grid-row: 1;
+      position: relative;
+      z-index: 1; } }
+  
+  .hero__text {
+    margin-bottom: 2.4rem; }
+    @media only screen and (min-width: 50.5em) {
+      .hero__text {
+        padding-right: 3rem; } }
+    @media only screen and (min-width: 57em) {
+      .hero__text {
+        padding-right: 14rem; } }
+    @media only screen and (min-width: 63.5em) {
+      .hero__text {
+        margin-bottom: 5.732rem;
+        padding-right: 16rem; } }
+    @media only screen and (min-width: 79.5em) {
+      .hero__text {
+        margin-bottom: 5.866rem;
+        padding-right: 26rem; } }
+    @media only screen and (min-width: 89.5em) {
+      .hero__text {
+        margin-bottom: 6.5rem; } }
+  
+
+
+@media only screen and (min-width: 43.5em) {
+    .heading-primary {
+        font-size: 2.64rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        line-height: 1;
+    }
+     .container.about-container {
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            align-content: center;
+        }
+}
+.heading-primary h1{
+    /* letter-spacing: 0.2rem; */
+    font-weight: 500;
+    text-align: left;
+    line-height: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.heading-primary h1 > span{
+    /* margin: 20px; */
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: thistle;
+    top: 8px;
+}
+
+.heading-primary > p{
+    /* font-family: "Shadows Into Light", serif; */
+    font-size: 2.0rem;
+    /* size:200px; */
+    margin-top: 2em;
+    padding-bottom: 20px;
+}
+.about-content > p{
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+.underline, .underline:link, .underline:active {
+    border-bottom: 4px solid hsl(153, 71%, 59%);
+    color: currentColor;
+    text-decoration: none;
+}
+@media only screen and (min-width: 42em) {
+    .about-content{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        position: relative;
+        z-index: 1;
+    }
+    .profile-img {
+        width: 500px;
+        height: 500px;
+        /* border-radius: 50%; */
+        object-fit: contain;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: relative;
+    }
+}
 
 .section-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 5em;
     color: rgba(255, 145, 169, 0.668);
 }
 
@@ -80,6 +355,7 @@ section {
     display: flex;
     gap: 40px;
     align-items: center;
+    flex-direction: column;
     /* background: linear-gradient(to right,rgb(14, 103, 45),rgb(41, 216, 114)); */
 }
 
@@ -91,25 +367,108 @@ section {
     display: flex;
     top: 0;
     bottom: 0;
-    left: 0;
+    right: 0;
     position: relative;
 }
-
-.skills-grid {
+.center-text {
+    text-align: center; }
+  
+.section-experience {
+    padding: 4rem 0;
+    /* border-top: 1px solid hsl(0,0%,100%); */
+    color: hsl(0, 73%, 91%);
+    /* border-bottom: 1px solid hsl(0,0%,100%); */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    row-gap: 2.4rem;
+    position: relative; 
 }
+    @media only screen and (min-width: 42em) {
+      .section-experience {
+        /* grid-template-columns: 1fr 1fr; */
+        /* text-align: left; */
+        column-gap: 1.8rem;
+        /* row-gap: 5.2rem; */
+        padding: 5.2rem 0 0;
+        margin-bottom: 2rem;
+    } 
+}
+ 
+    @media only screen and (min-width: 63.5em) {
+      .section-experience {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 3.8rem;
+        padding: 4rem 4rem 4rem;
+    } 
+    }
+    @media only screen and (min-width: 79.5em) {
+      .section-experience {
+        column-gap: 3.75rem;
+        margin-bottom: 3.2rem;
+    } 
+    }
+    @media only screen and (min-width: 89.5em) {
+      .section-experience {
+        margin-bottom: 3.6rem; } 
+    }
+    .section-experience::before {
+      position: absolute;
+      content: url(../images/pattern-rings.svg);
+      bottom: 0;
+      /* left: 50vw; */
+      transform: translateY(50%); 
+    }
+      @media only screen and (min-width: 42em) {
+        .section-experience::before {
+            left: 21vw; 
+        } 
+        }
+      @media only screen and (min-width: 63.5em) {
+        .section-experience::before {
+          left: 83vw; } 
+        }
+      @media only screen and (min-width: 79.5em) {
+        .section-experience::before {
+          left: 67.9rem;
+          bottom: 1rem; } 
+        }
+  
+  @media only screen and (min-width: 63.5em) {
+    .experience__text-box {
+      display: flex;
+      background-color: rgba(60, 40, 115, 0.54);
+      flex-direction: column;
+      align-items: flex-start;
+      column-gap: 1.21rem;
+      padding: 10px;
+      border:#ddd 1px solid;
+      border-radius: 10px;
+    }
+    .experience__text-box:hover{
+        background-color: rgb(240, 240, 240);
+        border-radius: 10px;
+        color: #2c3e50;
+        box-shadow: 0 0 10px rgba(63, 62, 62, 0.2);
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+ }
+  
+  @media only screen and (min-width: 79.5em) {
+    .experience__text-box {
+      gap: 1.4rem; } }
 
-.skill-card {
-    background: #f8f9fa;
-    background: linear-gradient(to left,rgb(68, 89, 139),rgb(17, 42, 65));
-    padding: 20px;
-    color: gray;
-    border-radius: 8px;
-    text-align: center;
-}
+
+    .heading-secondary {
+    font-size: 3.2rem;
+    letter-spacing: -0.1rem;
+    line-height: 4rem; }
+    @media only screen and (min-width: 42em) {
+        .heading-secondary {
+        font-size: 3.4rem;
+        line-height: 5.6rem; } }
+      
 
 .projects-grid {
     display: grid;
@@ -195,9 +554,30 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    .heading-primary h1 {
+        /* letter-spacing: 0.2rem; */
+        font-weight: 500;
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     .profile-img {
-        width: 200px;
-        height: 200px;
+        /* width: 200px; */
+        height: 400px;
+    }
+    .container.about-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .body-wrapper::before {
+        position: absolute;
+        content: url(../images/pattern-rings.svg);
+        bottom: 100vw;
+        /* left: 50vw; */
+        transform: translateY(50%);
     }
 }
