@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
+    <script src="js/events.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=javascript" />
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -130,15 +131,15 @@
                     <img src="/images/image.png" alt="Project 1" class="project-img">
                     <div class="project-info">
                         <h3>Peak Predict</h3>
-                        <p>a Cryptocurrency Prediction Platform</p>
-                        <button class="btn btn--green">View Project</button>
-                    </div>
+                        <p>Financial Market Prediction Platform</p>
+                        <a href="#" class="view-project-btn" onclick="openProjectModal('peak-predict')">View Project</a>
+                      </div>
                 </div>
                 <div class="project-card">
                     <img src="/images/Screenshot 2024-09-04 191144.png" alt="Project 2" class="project-img">
                     <div class="project-info">
                         <h3>Matranord</h3>
-                        <p>Truck tracking mobile app</p>
+                        <p>Truck Tracking mobile app</p>
                         <button class="btn btn--green">View Project</button>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
                   <img src="/images/Screenshot 2023-07-09 194653.png" alt="Project 2" class="project-img">
                   <div class="project-info">
                       <h3>Zitona</h3>
-                      <p>Olive plots management Mobile app</p>
+                      <p>Olive Tree plots management Mobile app</p>
                       <button class="btn btn--green">View Project</button>
                   </div>
               </div>
@@ -160,6 +161,27 @@
             </div>
             
             </div>
+        </div>
+        <!-- Project Modal -->
+        <div id="projectModal" class="modal">
+          <div class="modal-content">
+              <span class="close-modal">&times;</span>
+              <div class="project-carousel">
+                  <div class="carousel-container">
+                      <div class="carousel-track"></div>
+                  </div>
+                  <button class="carousel-btn prev-btn">&lt;</button>
+                  <button class="carousel-btn next-btn">&gt;</button>
+              </div>
+              <div class="project-details">
+                  <h2 id="modalProjectTitle"></h2>
+                  <p id="modalProjectDescription"></p>
+                  <div class="project-links">
+                      <a href="#" id="liveDemo" target="_blank" class="project-link">Live Demo</a>
+                      <a href="#" id="sourceCode" target="_blank" class="project-link">Source Code</a>
+                  </div>
+              </div>
+          </div>
         </div>
     </section>
 

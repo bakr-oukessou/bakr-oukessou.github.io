@@ -49,13 +49,13 @@ body {
     @media only screen and (min-width: 42em) {
       .body-wrapper::before {
         left: 68vw;
-        bottom: 49vw;
+        bottom: 89%;
         } 
       }
     @media only screen and (min-width: 63.5em) {
       .body-wrapper::before {
         /* left: 11vw; */
-        bottom: 250vw;
+        bottom: 90%;
        } 
       }
     @media only screen and (min-width: 79.5em) {
@@ -64,6 +64,12 @@ body {
         bottom: 145rem;
      } 
     }
+    @media only screen and (min-width: 89.5em) {
+      .body-wrapper::before {
+          left: 54.9rem;
+          bottom: 145rem;
+      }
+  }
   
 header {
     /* background: linear-gradient(rgb(1, 29, 96),rgb(1, 22, 42)); */
@@ -83,7 +89,7 @@ header {
     flex-direction: column;
 }
 .container.about-container {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: row;
     /* background: linear-gradient(to right,rgb(14, 103, 45),rgb(41, 216, 114)); */
@@ -209,154 +215,7 @@ section {
     .header__social-link:hover .header__social-svg .header__social-logo,
     .header__social-link:active .header__social-svg .header__social-logo {
       fill: hsl(153,71%,59%); }
-/*   
-.section-hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    position: relative; }
-    .section-hero::before {
-      content: url(../assets/images/pattern-rings.svg);
-      position: absolute;
-      top: 12.4rem;
-      right: 50vw;
-      z-index: 0; }
-      @media only screen and (min-width: 50.5em) {
-        .section-hero::before {
-          top: 7.5rem;
-          right: 64vw; } }
-      @media only screen and (min-width: 63.5em) {
-        .section-hero::before {
-          top: 7rem;
-          right: 72vw; } }
-      @media only screen and (min-width: 79.5em) {
-        .section-hero::before {
-          top: 10.5rem;
-          left: -29rem; } }
-      @media only screen and (min-width: 89.5em) {
-        .section-hero::before {
-          top: 12.9rem;
-          left: -26rem; } }
-    @media only screen and (min-width: 42em) {
-      .section-hero {
-        grid-template-columns: 8.47fr 5fr;
-        gap: 0;
-        padding-top: 14.1rem;
-        text-align: left; } }
-    @media only screen and (min-width: 50.5em) {
-      .section-hero {
-        grid-template-columns: 8fr 5fr; } }
-    @media only screen and (min-width: 57em) {
-      .section-hero {
-        grid-template-columns: 9fr 4fr; } }
-    @media only screen and (min-width: 63.5em) {
-      .section-hero {
-        grid-template-columns: 7fr 4fr;
-        padding-bottom: 11.4rem; } }
-    @media only screen and (min-width: 79.5em) {
-      .section-hero {
-        padding-top: 17.6rem;
-        padding-bottom: 10.222rem; } }
-    @media only screen and (min-width: 89.5em) {
-      .section-hero {
-        padding-top: 19.8rem;
-        padding-bottom: 11.5rem; } }
-  
-  .hero__pic {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    @media only screen and (min-width: 42em) {
-      .hero__pic::before {
-        content: url(../assets/images/pattern-circle.svg);
-        position: absolute;
-        bottom: 0;
-        left: 88vw;
-        z-index: 1;
-        height: 12.9rem; } }
-    @media only screen and (min-width: 63.5em) {
-      .hero__pic::before {
-        bottom: 7rem;
-        left: 50vw; } }
-    @media only screen and (min-width: 79.5em) {
-      .hero__pic::before {
-        bottom: 6.22rem;
-        left: 64rem; } }
-    @media only screen and (min-width: 89.5em) {
-      .hero__pic::before {
-        bottom: 7rem;
-        left: 59.7rem; } }
-  
-  .hero__img {
-    width: 63.73%;
-    z-index: 1;
-    position: relative; }
-    @media only screen and (min-width: 23em) {
-      .hero__img {
-        width: 50.73%; } }
-    @media only screen and (min-width: 42em) {
-      .hero__img {
-        width: 45.45%;
-        position: absolute;
-        top: 0;
-        right: -3.1rem;
-        z-index: 0; } }
-    @media only screen and (min-width: 48.5em) {
-      .hero__img {
-        width: 45%;
-        right: -3rem; } }
-    @media only screen and (min-width: 50.5em) {
-      .hero__img {
-        width: 43%; } }
-    @media only screen and (min-width: 51em) {
-      .hero__img {
-        width: 42.4%; } }
-    @media only screen and (min-width: 52em) {
-      .hero__img {
-        width: 41.7%; } }
-    @media only screen and (min-width: 57em) {
-      .hero__img {
-        width: 37.9%; } }
-    @media only screen and (min-width: 63.5em) {
-      .hero__img {
-        right: 0;
-        width: 40.091%; } }
-    @media only screen and (min-width: 79.5em) {
-      .hero__img {
-        width: 36.4%; } }
-    @media only screen and (min-width: 89.5em) {
-      .hero__img {
-        width: auto;
-        max-width: 40.09%; } }
-  
-  @media only screen and (min-width: 42em) {
-    .hero__text-box {
-      grid-column: 1 / 2;
-      grid-row: 1;
-      position: relative;
-      z-index: 1; } }
-  
-  .hero__text {
-    margin-bottom: 2.4rem; }
-    @media only screen and (min-width: 50.5em) {
-      .hero__text {
-        padding-right: 3rem; } }
-    @media only screen and (min-width: 57em) {
-      .hero__text {
-        padding-right: 14rem; } }
-    @media only screen and (min-width: 63.5em) {
-      .hero__text {
-        margin-bottom: 5.732rem;
-        padding-right: 16rem; } }
-    @media only screen and (min-width: 79.5em) {
-      .hero__text {
-        margin-bottom: 5.866rem;
-        padding-right: 26rem; } }
-    @media only screen and (min-width: 89.5em) {
-      .hero__text {
-        margin-bottom: 6.5rem; } }
-  
- */
+
 
 @media only screen and (min-width: 50.5em) {
     .heading-primary {
@@ -437,7 +296,7 @@ section {
 .about-content {
     display: flex;
     gap: 40px;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     /* background: linear-gradient(to right,rgb(14, 103, 45),rgb(41, 216, 114)); */
 }
@@ -712,8 +571,8 @@ button:hover {
     .body-wrapper::before {
         position: absolute;
         content: url(../images/pattern-rings.svg);
-        bottom: 100vw;
-        /* left: 50vw; */
+        bottom: 92%;
+        left: 50vw;
         transform: translateY(50%);
     }
 }
@@ -978,4 +837,129 @@ button:hover {
     
     .btn--form:hover, .btn--form:active {
       color: hsl(318, 79%, 72%); }
+  
+      .view-project-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #2c3e50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
     
+    .view-project-btn:hover {
+        background: #34495e;
+    }
+    
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+    
+    .modal-content {
+        position: relative;
+        background: #fff;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .close-modal {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    /* Carousel Styles */
+    .project-carousel {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .carousel-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .carousel-slide {
+        min-width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
+    /* Project Details Styles */
+    .project-details {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .project-links {
+        margin-top: 20px;
+    }
+    
+    .project-link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #2c3e50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    @media (max-width: 768px) {
+        .modal-content {
+            margin: 20px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+    
+        .project-carousel {
+            height: 300px;
+        }
+    }

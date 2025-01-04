@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title</title>
+    <script src="../js/events.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        /* Inline styles for demonstration; consider moving to styles.css */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .project-details {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .screenshot-container {
+            display: flex;
+            overflow-x: auto; /* Enables horizontal scrolling */
+            scroll-snap-type: x mandatory; /* Snap scrolling */
+            gap: 10px; /* Space between screenshots */
+            padding: 10px 0;
+        }
+        .screenshot {
+            min-width: 300px; /* Minimum width for each screenshot */
+            height: auto; /* Maintain aspect ratio */
+            scroll-snap-align: start; /* Align to the start of the container */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: hsl(153, 71%, 59%);
+            color: white;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: hsl(153, 71%, 49%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project-details">
+        <h1 class="project-title">Project Title</h1>
+        <p class="project-description">This is a brief description of the project. It highlights the main features and technologies used.</p>
+        
+        <div class="screenshot-container">
+            <img src="path/to/screenshot1.jpg" alt="Screenshot 1" class="screenshot">
+            <img src="path/to/screenshot2.jpg" alt="Screenshot 2" class="screenshot">
+            <img src="path/to/screenshot3.jpg" alt="Screenshot 3" class="screenshot">
+            <!-- Add more screenshots as needed -->
+        </div>
+
+        <a href="index.html" class="btn">Back to Projects</a>
+    </div>
+
+</body>
+</html>
