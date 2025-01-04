@@ -54,14 +54,14 @@ body {
       }
     @media only screen and (min-width: 63.5em) {
       .body-wrapper::before {
-        left: -11vw;
-        bottom: 171vw;
+        /* left: 11vw; */
+        bottom: 250vw;
        } 
       }
     @media only screen and (min-width: 79.5em) {
       .body-wrapper::before {
         left: 54.9rem;
-        bottom: 171rem;
+        bottom: 145rem;
      } 
     }
   
@@ -183,6 +183,7 @@ section {
     .header__social-box {
       display: flex;
       align-items: center;
+      padding-right: 3rem;
       gap: 2.467rem; }
       @media only screen and (min-width: 63.5em) {
         .header__social-box {
@@ -482,6 +483,7 @@ section {
         row-gap: 3.8rem;
         padding: 4rem 4rem 4rem;
     } 
+      
     }
     @media only screen and (min-width: 79.5em) {
       .section-experience {
@@ -497,6 +499,13 @@ section {
       position: absolute;
       content: url(../images/pattern-rings.svg);
       bottom: 0;
+      /* left: 50vw; */
+      transform: translateY(50%); 
+    }
+    .section-experience::after {
+      position: absolute;
+      content: url(../images/pattern-rings.svg);
+      bottom: 20rem;
       /* left: 50vw; */
       transform: translateY(50%); 
     }
@@ -526,6 +535,7 @@ section {
       border:#ddd 1px solid;
       border-radius: 10px;
     }
+    
     .experience__text-box:hover{
         background-color: rgb(240, 240, 240);
         border-radius: 10px;
@@ -551,6 +561,15 @@ section {
       gap: 1.4rem; } }
 
 
+    .experience__icon{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      /* object-fit: contain; */
+      float: right;
+      position: relative;
+    }
+
     .heading-secondary {
     font-size: 3.2rem;
     letter-spacing: -0.1rem;
@@ -563,7 +582,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 /* @media only screen and (min-width: 750px) {
@@ -594,6 +613,16 @@ section {
 .project-info {
     padding: 20px;
 }
+.project-info h3{
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: underline solid hsl(153, 50%, 42%) 3px; 
+}
+.project-info p{
+  margin-bottom: 1rem;
+}
 
 .contact-form {
     max-width: 600px;
@@ -612,7 +641,7 @@ input, textarea {
     margin-top: 5px;
 }
 
-button {
+/* button {
     background: #2c3e50;
     color: white;
     padding: 12px 24px;
@@ -620,7 +649,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-}
+} */
 
 button:hover {
     background: #34495e;
@@ -715,9 +744,15 @@ button:hover {
       row-gap: 9.2rem; } }
   .footer::before {
     position: absolute;
-    content: url(../assets/images/pattern-rings.svg);
+    content: url(../images/pattern-rings.svg);
     bottom: 25.5rem;
     right: 50vw;
+    z-index: 0; }
+  .footer::after {
+    position: absolute;
+    content: url(../images/pattern-rings.svg);
+    bottom: 25.5rem;
+    left: 50vw;
     z-index: 0; }
     @media only screen and (min-width: 42em) {
       .footer::before {
@@ -761,6 +796,7 @@ button:hover {
   .footer__logo:link, .footer__logo:visited {
     color: hsl(0,0%,100%);
     font-size: 2.4rem;
+    font-family: "shadows into light", serif;
     font-weight: 700;
     text-decoration: none;
     line-height: 3.2rem;
@@ -908,3 +944,38 @@ button:hover {
         
         color: hsl(0, 0%, 77%);
     }
+    .btn, .btn:link, .btn:visited {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: 0.229rem;
+      line-height: 2.6rem;
+      /* padding-bottom: 1rem; */
+      /* only for the .btn itself */
+      border: none;
+      /* border-radius: 20%; */
+      cursor: pointer;
+      font-family: inherit;
+      /* Put transition on the original "state" */
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out; }
+    
+    .btn--green:link, .btn--green:visited {
+      color: rgb(249, 215, 215);
+      border-bottom: 2px solid hsl(318, 79%, 72%); }
+    
+    .btn--green:hover, .btn--green:active {
+      color: hsl(318, 79%, 72%);
+      border-bottom: 2px solid hsl(318, 79%, 72%);
+     }
+    
+    .btn--form {
+      color: rgb(249, 215, 215);
+      border-bottom: 2px solid hsl(318, 79%, 72%);
+      background-color: transparent; }
+    
+    .btn--form:hover, .btn--form:active {
+      color: hsl(318, 79%, 72%); }
+    
