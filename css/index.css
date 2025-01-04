@@ -834,7 +834,38 @@ button:hover {
       color: rgb(249, 215, 215);
       border-bottom: 2px solid hsl(318, 79%, 72%);
       background-color: transparent; }
-    
+
+    .btn--primary{
+      /* display: inline-block; */
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: 0.229rem;
+      line-height: 2.6rem;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+      width: max-content;
+      padding: 5px;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      color: rgb(142, 131, 131);
+      border: 2px solid hsla(153, 48%, 49%, 0.722);
+
+      /* border: 2px solid hsl(318, 79%, 72%); */
+      border-radius: 20px;
+      /* background-color: transparent; */
+    }
+    .btn--primary:hover, .btn--primary:active {
+      color: hsl(318, 79%, 72%);
+      /* border-bottom: 2px solid hsl(318, 79%, 72%); */
+      background-color: transparent;
+      
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      border-radius: 20px;
+     }
     .btn--form:hover, .btn--form:active {
       color: hsl(318, 79%, 72%); }
   
@@ -882,6 +913,7 @@ button:hover {
     
     .close-modal:hover {
         color: #000;
+        transition: color 0.3s ease;
     }
     
     .project-carousel {
@@ -911,7 +943,7 @@ button:hover {
     }
     
     .carousel-slide img {
-        width: 100%;
+        /* width: 100%; */
         height: 100%;
         object-fit: cover;
     }
@@ -983,7 +1015,7 @@ button:hover {
     @media (max-width: 768px) {
         .modal-content {
             margin: 20px;
-            max-height: 90vh;
+            height: 90vh;
             overflow-y: auto;
         }
     

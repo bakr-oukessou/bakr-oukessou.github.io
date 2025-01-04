@@ -8,18 +8,16 @@ const projectData = {
             '/images/Screenshot 2023-07-09 194653.png',
             '/images/Screenshot 2023-05-15 011526.png'
         ],
-        liveDemo: 'https://peak-predict.example.com',
         sourceCode: 'https://github.com/example/peak-predict'
     },
     'matranord': {
         title: 'Matranord',
         description: 'Truck tracking mobile application with real-time GPS monitoring and route optimization.',
         images: [
-            '/images/image1.jpg',
+            '/images/image.jpg',
             '/images/Screenshot 2023-07-09 194653.png',
             '/images/Screenshot 2023-05-15 011526.png'
         ],
-        liveDemo: 'https://matranord.example.com',
         sourceCode: 'https://github.com/example/matranord'
     }
     // Add more projects as needed
@@ -37,7 +35,6 @@ function openProjectModal(projectId) {
     // Update modal content
     document.getElementById('modalProjectTitle').textContent = project.title;
     document.getElementById('modalProjectDescription').textContent = project.description;
-    document.getElementById('liveDemo').href = project.liveDemo;
     document.getElementById('sourceCode').href = project.sourceCode;
     
     // Create carousel slides
