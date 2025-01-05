@@ -837,6 +837,7 @@ button:hover {
 
     .btn--primary{
       /* display: inline-block; */
+      /* somehow not working */
       text-decoration: none;
       text-transform: uppercase;
       font-size: .8rem;
