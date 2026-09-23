@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <script src="js/events.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=javascript" />
+    <title>Bakr Oukessou - Full-Stack &amp; AI Engineer</title>
+    <meta name="description" content="Bakr Oukessou, full-stack and AI engineer. Master's student at ISIMA Clermont-Auvergne, available from October 2026.">
+    <script src="js/events.js" defer></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="body-wrapper">
     <nav>
         <ul>
-            
-            <a href="#" class="header__logo" aria-label="bakr-oukessou - Home">OUK-BAKR</a>
-            <li><a href="#contact">Contact</a></li>
-            <div class="header__social-box">
+            <li><a href="#home" class="header__logo" aria-label="Bakr Oukessou - Home">OUK-BAKR</a></li>
+            <li>
+                <ul class="nav__links">
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </li>
+            <li class="header__social-box">
                 <a
                   href="https://github.com/bakr-oukessou"
                   class="header__social-link"
@@ -41,7 +47,7 @@
                       d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
                     /></svg
                 ></a>
-      
+
                 <a
                   href="https://www.linkedin.com/in/bakr-oukessou"
                   class="header__social-link"
@@ -67,121 +73,205 @@
                       d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
                     /></svg
                 ></a>
-              </div>
+            </li>
         </ul>
     </nav>
-    
+
 
     <header id="home">
-        <!-- <div class="container">
-            <h1>OUKESSOU Bakr</h1>
-            <p>Software Developer | Web Designer | Tech Enthusiast</p>
-        </div> -->
         <section id="about">
             <div class="container about-container">
-                <img src="/images/Untitled-3.png" alt="Profile Picture" class="profile-img">
+                <img src="images/profile.webp" alt="Portrait of Bakr Oukessou" class="profile-img" width="800" height="800">
                 <div class="about-content">
                         <div class="heading-primary">
-                            <h1>HELLO WORLD!</br><span class="underline">I'm OUKESSOU Bakr</span></h1>
-                            <p>Software Developer | Web Designer | Tech Enthusiast</p>
+                            <h1>HELLO WORLD!<br><span class="underline">I'm OUKESSOU Bakr</span></h1>
+                            <p>Full-Stack &amp; AI Engineer</p>
                         </div>
-                        <p>I'm a passionate software developer based in Fez Morocco, with expertise in full-stack development. I love creating elegant solutions to complex problems and am constantly learning new technologies.</p>
+                        <p>I'm a full-stack and AI engineer finishing a Master's in Software Engineering &amp; Application Integration at ISIMA (Clermont-Auvergne, France). I've built NLP-powered semantic search at Safran Helicopter Engines and shipped web and mobile apps to production for startups in Morocco.</p>
+                        <p>Based in Tarnos, France. Available from October 2026, anywhere in France. I speak French (DALF C1), English, Arabic and Amazigh.</p>
                 </div>
             </div>
-        </section>  
+        </section>
     </header>
 
     <main class="main">
-        <section class="section-experience center-text fade-in">
-        <h2 class="visually-hidden">Experience Section</h2>
+        <section class="section-experience center-text fade-in" id="skills">
+        <h2 class="visually-hidden">Skills</h2>
         <div class="experience__text-box">
-          <h3 class="heading-secondary">HTML</h3>
-          <p>5 Years Experience</p>
+          <h3 class="heading-secondary">Languages</h3>
+          <p>Java · Python · C / C++ · C# · JavaScript / TypeScript · SQL</p>
         </div>
         <div class="experience__text-box">
-          <h3 class="heading-secondary">CSS</h3>
-          <p>5 Years Experience</p>
+          <h3 class="heading-secondary">Web &amp; Back-end</h3>
+          <p>React · Next.js · Angular · Node.js · Spring Boot · JEE · FastAPI · .NET</p>
         </div>
         <div class="experience__text-box">
-          <h3 class="heading-secondary">JavaScript</h3>
-          <p>3 Years Experience</p>
+          <h3 class="heading-secondary">Mobile</h3>
+          <p>React Native (Expo) · Android · Redux</p>
         </div>
         <div class="experience__text-box">
-          <h3 class="heading-secondary">Flask</h3>
-          <p>1 Year Experience</p>
+          <h3 class="heading-secondary">Data &amp; AI</h3>
+          <p>XGBoost · scikit-learn · SBERT · KeyBERT · spaCy · BM25</p>
         </div>
         <div class="experience__text-box">
-          <h3 class="heading-secondary">React</h3>
-          <p>1.5 Years Experience</p>
+          <h3 class="heading-secondary">DevOps &amp; Databases</h3>
+          <p>Docker · Kubernetes · GitHub Actions · CI/CD · Git · Jira · PostgreSQL · MongoDB · Redis · RabbitMQ</p>
         </div>
         <div class="experience__text-box">
-          <h3 class="heading-secondary">ReactNative</h3>
-          <p>1.5 Years Experience</p>
+          <h3 class="heading-secondary">Security</h3>
+          <p>OWASP · Nmap · DVWA · Security Shepherd · hashcat</p>
         </div>
+      </section>
+
+      <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__date">Apr – Sep 2026</p>
+            <div>
+              <h3 class="timeline__title">Full-Stack / Machine Learning Engineer</h3>
+              <p class="timeline__place">Safran Helicopter Engines · France</p>
+              <ul class="timeline__points">
+                <li>Built a multilingual (FR/EN) semantic search engine over industrial documentation, combining SBERT, BM25 and domain-specific synonym expansion.</li>
+                <li>Developed an NLP pipeline for automatic keyword extraction and document indexing (KeyBERT, spaCy, MMR).</li>
+                <li>Delivered a React + FastAPI application providing an interactive knowledge map of the business documentation.</li>
+                <li>Gathered requirements with business users and translated industrial processes into technical solutions.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">Mar – Sep 2025</p>
+            <div>
+              <h3 class="timeline__title">Full-Stack / DevOps Engineer</h3>
+              <p class="timeline__place">Kyboho Web Agency · Fès, Morocco</p>
+              <ul class="timeline__points">
+                <li>Shipped several web and mobile apps to production for startups in the ESISA CUBE incubator.</li>
+                <li>Owned the full cycle: requirements, development, CI/CD and production deployment (DNS, pipelines, domain names).</li>
+                <li>Stack: React, React Native (Expo), Node.js / Express, MongoDB Atlas, Clerk · Vercel, Heroku, GitHub Actions.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">Jun – Sep 2024</p>
+            <div>
+              <h3 class="timeline__title">Full-Stack Web &amp; Mobile Developer</h3>
+              <p class="timeline__place">STE Matranord · Tangier, Morocco</p>
+              <ul class="timeline__points">
+                <li>Built a mobile app for freight forwarders to track transport and transit trucks in real time.</li>
+                <li>Task assignment, driver and fleet management, and an interactive map of delivery progress.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
       </section>
     </main>
 
-    
+
 
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="/images/image.png" alt="Project 1" class="project-img">
+                    <div class="project-img project-img--placeholder" aria-hidden="true">IoT</div>
                     <div class="project-info">
-                        <h3>Peak Predict</h3>
-                        <p>Financial Market Prediction Platform</p>
-                        <a href="#" class="btn--primary" onclick="openProjectModal('peak-predict')">View Project</a>
-                      </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/Screenshot 2024-09-04 191144.png" alt="Project 2" class="project-img">
-                    <div class="project-info">
-                        <h3>Matranord</h3>
-                        <p>Truck Tracking mobile app</p>
-                        <a href="#" class="btn--primary" onclick="openProjectModal('matranord')">View Project</a>
+                        <h3>IoT Supervision Platform</h3>
+                        <p>Cloud-native monitoring and predictive analytics for connected devices</p>
+                        <p class="project-stack">Python · React · RabbitMQ · Kubernetes</p>
+                        <button type="button" class="btn--primary" data-project="iot-platform">View Project</button>
                     </div>
                 </div>
                 <div class="project-card">
-                  <img src="/images/Screenshot 2023-07-09 194653.png" alt="Project 2" class="project-img">
-                  <div class="project-info">
-                      <h3>Zitona</h3>
-                      <p>Olive Tree plots management Mobile app</p>
-                      <a href="#" class="btn--primary" onclick="openProjectModal('Zitona')">View Project</a>
-                  </div>
-              </div>
-              <div class="project-card">
-                <img src="/images/Screenshot 2023-05-15 011526.png" alt="Project 2" class="project-img">
-                <div class="project-info">
-                    <h3>Project Name</h3>
-                    <p>Description of project.</p>
-                    <a href="#" class="btn--primary" onclick="openProjectModal('matranord')">View Project</a>
+                    <img src="images/peak-predict.webp" alt="Peak Predict landing page" class="project-img" width="770" height="366" loading="lazy">
+                    <div class="project-info">
+                        <h3>Peak Predict</h3>
+                        <p>Crypto market monitoring and price-trend forecasting</p>
+                        <p class="project-stack">XGBoost · React · Spring Boot</p>
+                        <button type="button" class="btn--primary" data-project="peak-predict">View Project</button>
+                    </div>
                 </div>
-            </div>
-            
+                <div class="project-card">
+                    <img src="images/matranord.webp" alt="Matranord app welcome screen" class="project-img" width="373" height="732" loading="lazy">
+                    <div class="project-info">
+                        <h3>Matranord</h3>
+                        <p>Real-time truck tracking mobile app</p>
+                        <p class="project-stack">Mobile · Fleet management · Maps</p>
+                        <button type="button" class="btn--primary" data-project="matranord">View Project</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/zitona.webp" alt="Zitona app profile and plot overview screen" class="project-img" width="371" height="719" loading="lazy">
+                    <div class="project-info">
+                        <h3>Zitona</h3>
+                        <p>Olive grove plot management mobile app</p>
+                        <p class="project-stack">Mobile</p>
+                        <button type="button" class="btn--primary" data-project="zitona">View Project</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Project Modal -->
-        <div id="projectModal" class="modal">
+        <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
           <div class="modal-content">
-              <span class="close-modal">&times;</span>
+              <button type="button" class="close-modal" aria-label="Close">&times;</button>
               <div class="project-carousel">
                   <div class="carousel-container">
                       <div class="carousel-track"></div>
                   </div>
-                  <button class="carousel-btn prev-btn">&lt;</button>
-                  <button class="carousel-btn next-btn">&gt;</button>
+                  <button type="button" class="carousel-btn prev-btn" aria-label="Previous screenshot">&lt;</button>
+                  <button type="button" class="carousel-btn next-btn" aria-label="Next screenshot">&gt;</button>
               </div>
               <div class="project-details">
                   <h2 id="modalProjectTitle"></h2>
+                  <p id="modalProjectMeta" class="project-meta"></p>
                   <p id="modalProjectDescription"></p>
-                  <div class="project-links">
-                      <a href="#" id="sourceCode" target="_blank" class="project-link">Source Code</a>
-                  </div>
+                  <ul id="modalProjectHighlights" class="project-highlights"></ul>
+                  <ul id="modalProjectStack" class="project-tags"></ul>
+                  <div id="modalProjectLinks" class="project-links"></div>
               </div>
           </div>
         </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__date">2025 – 2026</p>
+            <div>
+              <h3 class="timeline__title">Master's (M2) — Software Engineering &amp; Application Integration</h3>
+              <p class="timeline__place">ISIMA · Clermont-Auvergne, France</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">2024 – 2025</p>
+            <div>
+              <h3 class="timeline__title">Master's (M1) — Information Systems &amp; Artificial Intelligence</h3>
+              <p class="timeline__place">ESISA · Fès, Morocco</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">2023 – 2024</p>
+            <div>
+              <h3 class="timeline__title">Bachelor's — Software Engineering</h3>
+              <p class="timeline__place">École Supérieure d'Ingénierie en Sciences Appliquées (ESISA) · Fès, Morocco</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">2022 – 2023</p>
+            <div>
+              <h3 class="timeline__title">Bachelor's — Computer Science, Web &amp; Mobile Applications</h3>
+              <p class="timeline__place">Université Mohammed V Souissi · Rabat, Morocco</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__date">2020 – 2022</p>
+            <div>
+              <h3 class="timeline__title">Specialized Technician Diploma — Software Development</h3>
+              <p class="timeline__place">Institut Supérieur des Technologies Appliquées · Fès, Morocco</p>
+            </div>
+          </li>
+        </ol>
     </section>
 
 
@@ -191,17 +281,22 @@
           id="contact"
           name="Portfolio Contact Form"
           method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit="submit"
+          action="https://formsubmit.co/bakr.oukessou@gmail.com"
         >
-          <input class="d-none" name="bot-field" />
+          <input type="text" class="d-none" name="_honey" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://bakr-oukessou.github.io/#contact" />
           <div class="form__heading-box center-text">
             <p class="form__heading">Contact Me</p>
             <p class="form__text">
               I would love to hear about your project and how I could help.
               Please fill in the form, and I’ll get back to you as soon as
               possible.
+            </p>
+            <p class="form__text">
+              Or email me directly at
+              <a class="form__email" href="mailto:bakr.oukessou@gmail.com">bakr.oukessou@gmail.com</a>
             </p>
           </div>
 
@@ -246,9 +341,9 @@
             </div>
             <div class="form__group right-text">
               <button type="submit" class="btn btn--form">Send message</button>
+              <p class="form__status" role="status" aria-live="polite"></p>
             </div>
           </div>
-          <!-- adamkeyes -->
         </form>
 
         <div class="footer__logo-box">
@@ -256,7 +351,7 @@
             href="#"
             class="footer__logo"
             title="Scrolls back to top"
-            aria-label="Adam Keyes - Home"
+            aria-label="Bakr Oukessou - Back to top"
             >OUK-Bakr</a
           >
           <div class="footer__social-box">
@@ -312,12 +407,10 @@
                   d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
                 /></svg
             ></a>
-
-            
           </div>
         </div>
       </footer>
-         
+
     </div>
     <script>
       const observer = new IntersectionObserver((entries) => {
